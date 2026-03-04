@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Al-Wahidi-clan/Al-Wahidi-clan
+  branch: main
+
+media_folder: "images" # المجلد الذي ستُحفظ فيه صور الأخبار تلقائياً
+public_folder: "images"
+
+collections:
+  - name: "news"
+    label: "الأخبار والمنشورات"
+    folder: "_news" # سيتم إنشاء مجلد للأخبار تلقائياً
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "تاريخ النشر", name: "date", widget: "datetime" }
+      - { label: "صورة الخبر", name: "image", widget: "image", required: false }
+      - { label: "تفاصيل الخبر", name: "body", widget: "markdown" }
