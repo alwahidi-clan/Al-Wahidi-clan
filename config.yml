@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: alwahidi-clan/Al-Wahidi-clan # اسم حسابك/اسم المستودع
+  repo: Al-Wahidi-clan/Al-Wahidi-clan
   branch: main
 
 media_folder: "images" # المجلد الذي ستُحفظ فيه صور الأخبار تلقائياً
